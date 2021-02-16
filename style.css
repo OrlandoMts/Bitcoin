@@ -93,3 +93,126 @@ header img {
     margin-left: 10px;
     background: url('./assets/icons/down-arrow.svg');
 }
+
+main {
+    width: 100%;
+    height: auto;
+    background-color: var(--off-white);
+    min-width: 320px;
+}
+
+.main-exchange-container {
+    width: 100%;
+    height: auto;
+    padding-top: 80px;
+    padding-bottom: 30px;
+    text-align: center;
+}
+
+.main-exchange-container--title {
+    width: 90%;
+    min-width: 288px;
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.main-exchange-container .backgroundImg {
+    width: 200px;
+    height: 200px;
+    margin: 0 auto;
+    margin-bottom: 50px;
+    background-image: url('./assets/img/Bitcoin.svg');
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.main-exchange-container h2 {
+    margin-bottom: 30px;
+    font-size: 2.4rem;
+    font-weight: bold;
+    line-height: 2.6rem;
+    color: var(--black);
+}
+
+.main-exchange-container p {
+    margin-bottom: 30px;
+    font-size: 1.4rem;
+    font-weight: 500;
+    line-height: 1.6rem;
+    color: #757575;
+}
+
+/* INICIO DE LA SECCION DE LA TABLA HECHA CON GRID */
+
+.main-table-container h3 {
+    font-size: 1.8rem;
+    font-weight: 500;
+    text-align: start;
+    padding-left: 100px;
+    padding-bottom: 5px;
+    color: var(--bitcoin-orange);
+}
+
+.main-table-container {
+    width: 100%;
+    min-width: 320px;
+    height: auto;
+}
+
+.main-table-container .main-table-container--grid {
+    width: 60%;
+    height: auto;
+    margin: 0 auto;
+    text-align: center;
+    display: grid;
+    grid-template-columns: 100px 100px;
+    grid-template-rows: auto;
+    grid-template-areas: 
+    "bitcoin dolar1"
+    "ethereum dolar2"
+    "ripple dolar3"
+    "stellar dolar4";
+    justify-content: center;
+}
+
+.main-table-container--grid {
+    background-color: var(--just-white);
+    min-width: 200px;
+    max-width: 350px;
+    border-radius: 5px;
+    box-shadow: 0px 4px 8px rgba(89, 73, 30, 0.16);
+}
+
+.itemA {
+    grid-area: bitcoin;
+    padding: 0;
+    margin: 0;
+}
+
+.itemB {
+    grid-area: ethereum;
+}
+
+.itemC {
+    grid-area: ripple;
+}
+
+.itemD {
+    grid-area: stellar;
+}
+
+.item1 {
+    grid-area: dolar1;
+}
+
+.item2 {
+    grid-area: dolar2;
+}
+
+.item3 {
+    grid-area: dolar3;
+}
+
+.item4 {
+    grid-area: dolar4;
+}
