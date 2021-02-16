@@ -144,11 +144,16 @@ main {
 
 /* INICIO DE LA SECCION DE LA TABLA HECHA CON GRID */
 
+.main-table-container--title {
+    width: 200px;
+    height: auto;
+    margin: 0 auto;
+}
+
 .main-table-container h3 {
     font-size: 1.8rem;
     font-weight: 500;
     text-align: start;
-    padding-left: 100px;
     padding-bottom: 5px;
     color: var(--bitcoin-orange);
 }
@@ -215,4 +220,30 @@ main {
 
 .item4 {
     grid-area: dolar4;
+}
+
+.main-table-container--grid div p {
+    margin-bottom: 10px;
+    text-align: start;
+}
+/* PENDIENTE */
+.main-table-container--grid div p .dollar {
+    text-align: end;
+    color: gray;
+}
+
+.main-table-container--grid div:nth-child(odd) span {
+    display: inline-block;
+    width: 13px;
+    height: 8px;
+    margin-left: 10px;
+    background: url('./assets/icons/trending-up.svg');
+}
+
+.main-table-container--grid div:nth-child(even) span {
+    display: inline-block;
+    width: 13px;
+    height: 8px;
+    margin-left: 10px;
+    background: url('./assets/icons/trending-down.svg');
 }
