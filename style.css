@@ -152,25 +152,29 @@ main {
 
 .main-table-container h3 {
     font-size: 1.8rem;
-    font-weight: 500;
+    font-weight: bold;
     text-align: start;
     padding-bottom: 5px;
     color: var(--bitcoin-orange);
 }
 
 .main-table-container {
-    width: 100%;
+    width: 70%;
     min-width: 320px;
+    max-width: 500px;
     height: auto;
+    margin: 0 auto;
+    font-family: "Inter", sans-serif;
 }
 
 .main-table-container .main-table-container--grid {
     width: 60%;
-    height: auto;
+    max-width: 250px;
+    height: 150px;
     margin: 0 auto;
     text-align: center;
     display: grid;
-    grid-template-columns: 100px 100px;
+    grid-template-columns: 80px 80px;
     grid-template-rows: auto;
     grid-template-areas: 
     "bitcoin dolar1"
@@ -178,13 +182,12 @@ main {
     "ripple dolar3"
     "stellar dolar4";
     justify-content: center;
+    align-items: center;
 }
 
 .main-table-container--grid {
     background-color: var(--just-white);
-    min-width: 200px;
-    max-width: 350px;
-    border-radius: 5px;
+    border-radius: 10px;
     box-shadow: 0px 4px 8px rgba(89, 73, 30, 0.16);
 }
 
@@ -225,11 +228,16 @@ main {
 .main-table-container--grid div p {
     margin-bottom: 10px;
     text-align: start;
-}
-/* PENDIENTE */
-.main-table-container--grid div p .dollar {
-    text-align: end;
+    font-weight: 500;
+    line-height: 1.9rem;
     color: gray;
+}
+
+section div div .dollar {
+    text-align: end;
+    font-weight: normal;
+    line-height: 1.7rem;
+    color: #757575;
 }
 
 .main-table-container--grid div:nth-child(odd) span {
@@ -238,12 +246,32 @@ main {
     height: 8px;
     margin-left: 10px;
     background: url('./assets/icons/trending-up.svg');
+    background-position: center;
+    background-repeat: no-repeat;
 }
 
 .main-table-container--grid div:nth-child(even) span {
     display: inline-block;
     width: 13px;
-    height: 8px;
+    height: 10px;
     margin-left: 10px;
     background: url('./assets/icons/trending-down.svg');
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.main-table-container--date {
+    width: 200px;
+    height: 30px;
+    margin: 0 auto;
+    margin-top: 15px;
+    padding: 8px;
+    background-color: var(--soft-orange);
+    border-radius: 8px;
+}
+
+.main-table-container--date p {
+    font-size: 1.2rem;
+    line-height: 1.5rem;
+    color: var(--warm-black);
 }
