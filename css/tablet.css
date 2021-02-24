@@ -2,6 +2,19 @@
     ME CAMBIA EL TAMAÑO DE LAS LETRAS Y SE DESBORDAN UN POCO LOS ELEMENTOS
     font-size: 80%;
 } */
+
+.main-table-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+    margin: 0 auto;
+    overflow-x: hidden;
+}
+
+/* .main-table-container .main-table-container--grid {
+    width: 300px;
+} */
+
 .product-cards--container{
     display: grid;
     grid-template-columns: repeat(2, 1fr);

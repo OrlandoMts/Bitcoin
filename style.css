@@ -151,7 +151,7 @@ main {
     margin: 0 auto;
 }
 
-.main-table-container h3 {
+.main-table-container .main-table-container--title {
     font-size: 1.8rem;
     font-weight: bold;
     text-align: start;
@@ -162,17 +162,26 @@ main {
 .main-table-container {
     width: 70%;
     min-width: 320px;
-    max-width: 500px;
+    max-width: 600px;
     height: auto;
     margin: 0 auto;
     font-family: "Inter", sans-serif;
+    /* Es para el scroll */
+    display: flex;
+    overflow-x: scroll;
+    overscroll-behavior-x: contain;
+    scroll-snap-type: x proximity;
+}
+
+.main-table-container--coins {
+    scroll-snap-align: center;
 }
 
 .main-table-container .main-table-container--grid {
-    width: 60%;
-    max-width: 250px;
+    min-width: 250px;
     height: 150px;
     margin: 0 auto;
+    margin-right: 10px;
     text-align: center;
     display: grid;
     grid-template-columns: 80px 80px;
